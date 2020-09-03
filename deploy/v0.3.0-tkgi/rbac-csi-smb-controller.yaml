@@ -47,3 +47,4 @@ roleRef:
   kind: ClusterRole
   name: smb-external-provisioner-role
   apiGroup: rbac.authorization.k8s.io
+
