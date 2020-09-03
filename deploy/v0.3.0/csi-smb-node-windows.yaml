@@ -42,7 +42,7 @@ spec:
           args:
             - --v=5
             - --csi-address=$(CSI_ENDPOINT)
-            - --kubelet-registration-path=C:\\var\\lib\\kubelet\\plugins\\smb.csi.k8s.io\\csi.sock
+            - --kubelet-registration-path=C:\\var\\lib\\kubelet\\plugins_registry\\smb.csi.k8s.io\\csi.sock
           env:
             - name: CSI_ENDPOINT
               value: unix://C:\\csi\\csi.sock
@@ -98,7 +98,7 @@ spec:
             privileged: true
           volumeMounts:
             - name: kubelet-dir
-              mountPath: "C:\\var\\lib\\kubelet"
+              mountPath: "C:\\var\\vcap\\data\\kubelet"
             - name: plugin-dir
               mountPath: C:\csi
             - name: csi-proxy-fs-pipe
@@ -123,13 +123,13 @@ spec:
             type: ""
         - name: registration-dir
           hostPath:
-            path: C:\var\lib\kubelet\plugins_registry\
+            path: C:\var\vcap\data\kubelet\plugins_registry\
             type: Directory
         - name: kubelet-dir
           hostPath:
-            path: C:\var\lib\kubelet\
+            path: C:\var\vcap\data\kubelet\
             type: Directory
         - name: plugin-dir
           hostPath:
-            path: C:\var\lib\kubelet\plugins\smb.csi.k8s.io\
+            path: C:\var\vcap\data\kubelet\plugins_registry\smb.csi.k8s.io\
             type: DirectoryOrCreate
