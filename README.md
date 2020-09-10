@@ -1,4 +1,4 @@
-# SMB CSI Driver for Kubernetes
+# SMB CSI Driver for Kubernetes (with TKGI path changes)
 [![Travis](https://travis-ci.org/kubernetes-csi/csi-driver-smb.svg)](https://travis-ci.org/kubernetes-csi/csi-driver-smb)
 [![Coverage Status](https://coveralls.io/repos/github/kubernetes-csi/csi-driver-smb/badge.svg?branch=master)](https://coveralls.io/github/kubernetes-csi/csi-driver-smb?branch=master)
 [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Fkubernetes-csi%2Fcsi-driver-smb.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Fkubernetes-csi%2Fcsi-driver-smb?ref=badge_shield)
@@ -12,6 +12,7 @@ This driver allows Kubernetes to use [SMB](https://wiki.wireshark.org/SMB) CSI v
 |SMB CSI Driver Version  | Image                                        | 1.14+  |
 |------------------------|----------------------------------------------|--------|
 |master branch           |mcr.microsoft.com/k8s/csi/smb-csi:latest      | yes    |
+|v0.3.0-tkgi-1           |mcr.microsoft.com/k8s/csi/smb-csi:v0.3.0      | yes    |
 |v0.3.0                  |mcr.microsoft.com/k8s/csi/smb-csi:v0.3.0      | yes    |
 |v0.2.0                  |mcr.microsoft.com/k8s/csi/smb-csi:v0.2.0      | yes    |
 
