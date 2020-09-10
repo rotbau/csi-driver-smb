@@ -1,8 +1,8 @@
 ## Install SMB CSI driver master version on a Kubernetes cluster
 
-### Install by kubectl
+### Install by kubectl for TKGI
 ```console
-curl -skSL https://raw.githubusercontent.com/kubernetes-csi/csi-driver-smb/master/deploy/install-driver.sh | bash -s master --
+curl -skSL https://raw.githubusercontent.com/svrc/csi-driver-smb/v0.3.0-tkgi-1/deploy/install-driver.sh | bash -s master --
 ```
 
  - check pods status:
@@ -23,5 +23,5 @@ csi-smb-node-hg76w                          3/3     Running   0          27s    
 
 ### clean up SMB CSI driver
 ```console
-curl -skSL https://raw.githubusercontent.com/kubernetes-csi/csi-driver-smb/master/deploy/uninstall-driver.sh | bash -s --
+curl -skSL https://raw.githubusercontent.com/svrc/csi-driver-smb/v0.3.0-tkgi-1/deploy/uninstall-driver.sh | bash -s --
 ```
