@@ -2,7 +2,7 @@
 
 ### Install by kubectl for TKGI
 ```console
-curl -skSL https://raw.githubusercontent.com/svrc/csi-driver-smb/v0.3.0-tkgi-1/deploy/install-driver.sh | bash -s v0.3.0-tkgi-1 --
+curl -skSL https://raw.githubusercontent.com/svrc/csi-driver-smb/master/deploy/install-driver.sh | bash -s v0.3.0-tkgi-1 --
 ```
 
  - check pods status:
